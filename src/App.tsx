@@ -1,5 +1,19 @@
+import React from "react";
+
+import TextInput from "./base-components/TextInput/TextInput";
+
 function App() {
-  return <div className="App">CaDas</div>;
+  return (
+    <div>
+      <TextInput
+        id="email"
+        placeholder="Email"
+        label="Email"
+        value="Dharti"
+        disabled={true}
+      />
+    </div>
+  );
 }
 
 export default App;

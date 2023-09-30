@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import React from "react";
 
 import "src/base-components/TextInput/TextInput.scss";
@@ -14,6 +15,7 @@ interface ITextInputProps {
   inputClassName?: string;
   containerClassName?: string;
   labelClassName?: string;
+  errorClassName?: string;
 
   disabled?: boolean;
 
@@ -36,6 +38,7 @@ const TextInput: React.FC<ITextInputProps> = (props) => {
     inputClassName = "",
     containerClassName = "",
     labelClassName = "",
+    errorClassName = "",
 
     disabled = false,
 
@@ -46,7 +49,7 @@ const TextInput: React.FC<ITextInputProps> = (props) => {
   } = props;
 
   return (
-    <div className={containerClassName}>
+    <div className={classNames("input-container-wrapper", containerClassName)}>
       {label && (
         <label htmlFor={id} className={labelClassName}>
           {label}
@@ -59,12 +62,22 @@ const TextInput: React.FC<ITextInputProps> = (props) => {
         value={value}
         disabled={disabled}
         placeholder={placeholder}
-        className={inputClassName}
+        className={classNames(
+          "input-wrapper",
+          {
+            "field-input--invalid": !!errorMessage,
+          },
+          inputClassName
+        )}
         onBlur={onBlur}
         onChange={onChange}
       />
 
-      {errorMessage && <div>{errorMessage}</div>}
+      {errorMessage && (
+        <div className={classNames("error-class", errorClassName)}>
+          {errorMessage}
+        </div>
+      )}
 
       {children}
     </div>

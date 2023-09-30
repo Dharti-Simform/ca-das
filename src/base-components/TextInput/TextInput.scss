@@ -1,0 +1,56 @@
+@import "src/assets/_variables.scss";
+
+.input-container-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+
+  label {
+    color: $chinese-black;
+    font-size: 16px;
+    margin: 0 0 7px 0;
+    display: block;
+    font-weight: 500;
+  }
+
+  .input-wrapper {
+    background-color: $light-grey;
+    border: 1px solid $light-grey;
+    border-radius: 16px;
+    color: $dark-grey;
+    // !TO-DO: Replace with variable
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    padding: 11px 24px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 100%;
+    height: 46px;
+
+    &::placeholder {
+      color: $dark-grey;
+    }
+
+    &:hover:not(:disabled),
+    &:focus:not(:disabled) {
+      border-color: $science-blue;
+      background-color: $cool-grey;
+    }
+
+    &:disabled {
+      background-color: $chinese-white;
+      cursor: not-allowed;
+    }
+
+    &.field-input--invalid {
+      border-color: $c-red;
+    }
+  }
+
+  .error-class {
+    color: $c-red;
+    font-size: 12px;
+    margin-top: 6px;
+  }
+}
