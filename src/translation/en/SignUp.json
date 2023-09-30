@@ -1,0 +1,24 @@
+{
+  "title": "Getting Started",
+  "subtitle": "Create an account to continue!",
+  "form": {
+    "email": {
+      "placeholder": "Your Email"
+    },
+    "name": {
+      "placeholder": "Your Name"
+    },
+    "password": {
+      "placeholder": "Create Password"
+    }
+  },
+  "terms":"By creating an account, you agree to our",
+  "termsLink":"Terms and Conditions",
+  "register":"Register",
+  "or":"OR",
+  "googleLogin":"Continue with Google",
+  "existingAccount":{
+    "label":"Already have an account? ",
+    "link":"Sign in"
+  }
+}

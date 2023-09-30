@@ -1,0 +1,19 @@
+{
+  "forgetPwd": "Forgot Password",
+  "form": {
+    "email": {
+      "placeholder": "Your Email"
+    },
+    "password": {
+      "placeholder": "Your Password"
+    }
+  },
+  "googleLogin": "Continue with Google",
+  "newAccount": {
+    "label": "Don't have an account? ",
+    "link": "Sign up"
+  },
+  "rememberMe": "Remember Me",
+  "subtitle": "Welcome back, you’ve been missed!",
+  "title": "Let’s Sign You In"
+}
