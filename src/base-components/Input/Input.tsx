@@ -1,11 +1,14 @@
 import classNames from "classnames";
 import React from "react";
 
-import "src/base-components/TextInput/TextInput.scss";
+import "src/base-components/Input/Input.scss";
 
-interface ITextInputProps {
+type INPUT_TYPES = "text" | "password" | "number";
+
+interface IInputProps {
   id: string;
   name?: string;
+  type?: INPUT_TYPES;
   label?: string;
   value: string;
   placeholder?: string;
@@ -25,10 +28,11 @@ interface ITextInputProps {
   children?: React.ReactNode;
 }
 
-const TextInput: React.FC<ITextInputProps> = (props) => {
+const Input: React.FC<IInputProps> = (props) => {
   const {
     id,
     name = "",
+    type = "text",
     label,
     value,
     placeholder,
@@ -59,6 +63,7 @@ const TextInput: React.FC<ITextInputProps> = (props) => {
       <input
         id={id}
         name={name}
+        type={type}
         value={value}
         disabled={disabled}
         placeholder={placeholder}
@@ -84,4 +89,4 @@ const TextInput: React.FC<ITextInputProps> = (props) => {
   );
 };
 
-export default TextInput;
+export default Input;

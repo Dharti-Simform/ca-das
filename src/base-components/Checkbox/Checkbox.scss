@@ -1,0 +1,63 @@
+@import "src/assets/_variables.scss";
+
+.checkbox-container-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+
+  .checkbox-label-container {
+    display: flex;
+    align-items: center;
+
+    .checkbox-wrapper {
+      border: solid 1px $light-grey;
+      margin: 0;
+
+      &:checked {
+        &::after {
+          //   width: 10px;
+          //   height: 10px;
+          position: relative;
+          content: "";
+          display: block;
+          background-color: $light-grey;
+          background-size: 10px;
+        }
+      }
+
+      &.field-input--invalid {
+        border-color: $c-red;
+      }
+
+      &:hover:not(:disabled) {
+        cursor: pointer;
+      }
+
+      &:hover:not(:disabled),
+      &:focus:not(:disabled) {
+        border-color: $science-blue;
+        background-color: $cool-grey;
+      }
+
+      &:disabled {
+        background-color: $chinese-white;
+        cursor: not-allowed;
+      }
+    }
+
+    label {
+      color: $chinese-black;
+      font-size: 16px;
+      margin: 0;
+      padding-left: 6px;
+      display: block;
+      font-weight: 500;
+    }
+  }
+
+  .error-class {
+    color: $c-red;
+    font-size: 12px;
+    margin-top: 6px;
+  }
+}
