@@ -10,20 +10,23 @@
     align-items: center;
 
     .checkbox-wrapper {
-      border: solid 1px $light-grey;
+      border: 1px solid $light-grey;
       margin: 0;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
 
-      &:checked {
-        &::after {
-          //   width: 10px;
-          //   height: 10px;
-          position: relative;
-          content: "";
-          display: block;
-          background-color: $light-grey;
-          background-size: 10px;
-        }
-      }
+      // &:checked {
+      //   &::after {
+      //     //   width: 10px;
+      //     //   height: 10px;
+      //     position: relative;
+      //     content: "";
+      //     display: block;
+      //     background-color: $light-grey;
+      //     background-size: 10px;
+      //   }
+      // }
 
       &.field-input--invalid {
         border-color: $c-red;
@@ -36,7 +39,6 @@
       &:hover:not(:disabled),
       &:focus:not(:disabled) {
         border-color: $science-blue;
-        background-color: $cool-grey;
       }
 
       &:disabled {

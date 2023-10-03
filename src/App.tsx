@@ -2,6 +2,7 @@ import React from "react";
 
 import TextInput from "./base-components/Input/Input";
 import Checkbox from "./base-components/Checkbox/Checkbox";
+import Button from "./base-components/Button/Button";
 
 function App() {
   return (
@@ -21,6 +22,13 @@ Term and Conditions"
         disabled={false}
         errorMessage="opopo"
       />
+      <Button
+        id="submit-btn"
+        onClick={() => console.log("*** clicked")}
+        // disabled={true}
+      >
+        Submit
+      </Button>
     </div>
   );
 }

@@ -1,0 +1,27 @@
+@import "src/assets/_variables.scss";
+
+.button-container-wrapper {
+  min-width: 296px;
+  background-color: $science-blue;
+
+  border: 1px solid $science-blue;
+  border-radius: 16px;
+  padding: 10px 15px;
+
+  color: $primary-white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+
+  &:disabled {
+    border-color: $primary-dark-grey;
+    background-color: $primary-dark-grey;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    border-color: $dark-blue;
+    background-color: $dark-blue;
+    cursor: pointer;
+  }
+}

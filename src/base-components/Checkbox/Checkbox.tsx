@@ -3,7 +3,7 @@ import React from "react";
 
 import "src/base-components/Checkbox/Checkbox.scss";
 
-interface IInputProps {
+interface ICheckboxProps {
   id: string;
   name?: string;
   label?: string;
@@ -24,7 +24,16 @@ interface IInputProps {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Input: React.FC<IInputProps> = (props) => {
+/* 
+  TO-DO: 
+  1. Make the label clickable
+  2. CSS changes to Checkbox
+  -> Border radius and color
+  -> Hover effect
+  -> How to change the CSS of tick
+*/
+
+const Checkbox: React.FC<ICheckboxProps> = (props) => {
   const {
     id,
     name = "",
@@ -84,4 +93,4 @@ const Input: React.FC<IInputProps> = (props) => {
   );
 };
 
-export default Input;
+export default Checkbox;
