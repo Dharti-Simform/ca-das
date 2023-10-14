@@ -1,20 +1,51 @@
 @import "src/assets/_variables.scss";
 
-html {
-  /* overflow-x: hidden;
-  margin-right: calc(-1 * (100vw - 100%));
+/* 
+  ================ H1 to H6 font size ==============
+  header: desktop | tablet | mobile (default in px)
+  h1: 34 | 34 | 24
+  h2: 30 | 24 | 18
+  h3: 24 | 24 | 18
+  h4: 20 | 18 | 18
+  h5: 18 | 16
+  h6: 16
+*/
 
-  overscroll-behavior-y: none; */
+/* 
+  1rem = 16px by default
+  Here, changing the default rem calculation for easy calculation
+  Modified: 1rem = 10px <=> 1px = 0.1rem
+*/
+
+:root {
+  /* 
+   Usually default font-size of the browser is 16px. 
+   Setting font-size: 100% will make 1rem = 16px. 
+   But it will make calculations a little difficult. 
+   A better way is to set font-size: 62.5%. 
+   Because 62.5% of 16px is 10px. Which makes 1rem = 10px.
+  */
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
+  font-size: 1.6rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 14px;
   line-height: normal;
-  /* background-color: $primary-white;
-  color: $primary-black; */
+  margin: 0;
+}
+
+.form-container {
+  border-radius: 48px;
+  background: var(--white-w-100, #FFF);
+  box-shadow: 80px 120px 504px 0px rgba(0, 0, 0, 0.16);
+
+  min-width: 36rem;
+  padding: 0.4rem 3.2rem;
 }
