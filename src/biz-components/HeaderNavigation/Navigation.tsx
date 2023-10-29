@@ -8,9 +8,9 @@ import { ReactComponent as PlusIcon } from "src/assets/icons/plus-icon.svg";
 import { ReactComponent as SettingIcon } from "src/assets/icons/settings.svg";
 import { ReactComponent as BellIcon } from "src/assets/icons/bell.svg";
 
-import "src/base-components/HeaderNavigation/Navigation.scss";
-import Input from "../Input/Input";
-import Button from "../Button/Button";
+import "src/biz-components/HeaderNavigation/Navigation.scss";
+import Input from "../../base-components/Input/Input";
+import Button from "../../base-components/Button/Button";
 
 /* 
     TO-DO:
