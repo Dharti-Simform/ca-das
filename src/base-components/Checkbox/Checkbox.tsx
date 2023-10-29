@@ -6,7 +6,7 @@ import "src/base-components/Checkbox/Checkbox.scss";
 interface ICheckboxProps {
   id: string;
   name?: string;
-  label?: string;
+  label?: string | React.ReactElement;
 
   errorMessage?: string;
 

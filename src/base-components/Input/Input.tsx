@@ -20,6 +20,8 @@ interface IInputProps {
   labelClassName?: string;
   errorClassName?: string;
 
+  autoComplete?: "on" | "off";
+
   disabled?: boolean;
 
   onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
@@ -28,6 +30,11 @@ interface IInputProps {
   children?: React.ReactNode;
 }
 
+/* 
+  TO-DO: 
+  - Border color on focus
+  - Font family looks different than Figma
+*/
 const Input: React.FC<IInputProps> = (props) => {
   const {
     id,
@@ -45,6 +52,8 @@ const Input: React.FC<IInputProps> = (props) => {
     errorClassName = "",
 
     disabled = false,
+
+    autoComplete = "on",
 
     onBlur,
     onChange,
@@ -76,6 +85,7 @@ const Input: React.FC<IInputProps> = (props) => {
         )}
         onBlur={onBlur}
         onChange={onChange}
+        autoComplete={autoComplete}
       />
 
       {errorMessage && (

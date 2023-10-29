@@ -1,0 +1,25 @@
+@import "src/assets/_variables.scss";
+
+.google-login {
+  min-width: 296px;
+  background-color: $grey;
+
+  border: 1px solid $grey;
+  border-radius: 16px;
+  padding: 10px 15px;
+
+  color: $chinese-black;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+
+  svg {
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

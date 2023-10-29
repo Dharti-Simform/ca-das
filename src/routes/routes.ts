@@ -1,6 +1,5 @@
 export const routes: Record<string, string> = {
-    index: '/',
+    login: '/',
     playground: '/playground',
-    login: '/login',
     register: '/register'
 }

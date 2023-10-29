@@ -1,0 +1,41 @@
+@import "src/assets/_variables.scss";
+
+.signup-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .signup-form {
+    margin-top: 4rem;
+    width: 100%;
+  }
+
+  .eye-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    translate: (0, 50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .alternate-text {
+    color: $dark-grey;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .login-link {
+    margin-top: 1.6rem;
+    color: $dark-grey;
+    font-size: 13px;
+    font-weight: 500;
+
+    a {
+      font-weight: 700;
+    }
+  }
+}
