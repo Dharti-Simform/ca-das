@@ -1,5 +1,3 @@
-@import "src/assets/_variables.scss";
-
 /* 
   ================ H1 to H6 font size ==============
   header: desktop | tablet | mobile (default in px)
@@ -41,11 +39,31 @@ body {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+a{
+  color: var(--blue-b-100, #0052CC);
+}
+
 .form-container {
   border-radius: 48px;
   background: var(--white-w-100, #FFF);
   box-shadow: 80px 120px 504px 0px rgba(0, 0, 0, 0.16);
 
   min-width: 36rem;
-  padding: 0.4rem 3.2rem;
+  padding: 4rem 3.2rem;
+}
+
+.vertical-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horizontal-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
