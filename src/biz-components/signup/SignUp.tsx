@@ -72,11 +72,12 @@ const SignUp: React.FC = () => {
             value={password}
             onChange={handleChange}
             placeholder={t("form.password.placeholder")}
+            containerClassName="input-icon-wrapper"
           >
             <EyeIcon
               width={24}
               height={24}
-              className="eye-icon"
+              className="icon"
               onClick={() =>
                 setPwdType(pwdType === "password" ? "text" : "password")
               }

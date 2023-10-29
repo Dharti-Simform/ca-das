@@ -1,0 +1,22 @@
+{
+  "user": "Hi {{name}}!",
+  "search": "Search...",
+  "startProject": "Start Project",
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "message": "Message",
+    "project": "Project",
+    "schedule": "Schedule",
+    "activity": "Activity"
+  },
+  "team": {
+    "title": "MY TEAM",
+    "teams": "TEAMS",
+    "addNewTeam": "Add New Team",
+    "addTeam": "Add Team"
+  },
+  "projects": {
+    "title": "MY PROJECTS",
+    "addProject": "Add Project"
+  }
+}

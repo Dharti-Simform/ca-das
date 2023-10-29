@@ -10,15 +10,6 @@
     width: 100%;
   }
 
-  .eye-icon {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    translate: (0, 50%);
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-
   .alternate-text {
     color: $dark-grey;
     margin-top: 1rem;
