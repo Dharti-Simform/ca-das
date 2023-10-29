@@ -16,7 +16,7 @@ const GoogleLogin: React.FC = () => {
   const { t } = useTranslation("SignUp");
 
   return (
-    <Link className="google-login" to={routes.login}>
+    <Link className="google-login" to={routes.dashboard}>
       <Google height={16} width={16} />
       <span>{t("googleLogin")}</span>
     </Link>

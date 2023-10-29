@@ -15,5 +15,7 @@
   },
   "rememberMe": "Remember Me",
   "subtitle": "Welcome back, you’ve been missed!",
-  "title": "Let’s Sign You In"
+  "title": "Let’s Sign You In",
+  "login": "Login",
+  "or": "OR"
 }

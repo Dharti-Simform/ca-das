@@ -52,7 +52,8 @@ a{
   background: var(--white-w-100, #FFF);
   box-shadow: 80px 120px 504px 0px rgba(0, 0, 0, 0.16);
 
-  min-width: 36rem;
+  /* min-width: 36rem; */
+  width: 36rem;
   padding: 4rem 3.2rem;
 }
 
@@ -66,4 +67,8 @@ a{
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.grey-font {
+  color: #8F92A1
 }

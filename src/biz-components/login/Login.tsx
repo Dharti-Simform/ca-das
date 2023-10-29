@@ -1,32 +1,31 @@
 import React, { useCallback, useState } from "react";
 
 import { useTranslation } from "react-i18next";
+import { Link, useNavigate } from "react-router-dom";
+import { routes } from "src/routes/routes";
 
 import PublicLayout from "src/layouts/public-layout/PublicLayout";
 import Input from "src/base-components/Input/Input";
+import Button from "src/base-components/Button/Button";
+
+import GoogleLogin from "../google-login/GoogleLogin";
+
 import { ReactComponent as EyeIcon } from "src/assets/icons/eye.svg";
 
 import "../signup/SignUp.scss";
-import Checkbox from "src/base-components/Checkbox/Checkbox";
-import Button from "src/base-components/Button/Button";
-import GoogleLogin from "../google-login/GoogleLogin";
-import { Link, useNavigate } from "react-router-dom";
-import { routes } from "src/routes/routes";
 
 /* 
   TO-DO:
   - Should we apply fixed width to container or use padding?
 */
-const SignUp: React.FC = () => {
-  const { t } = useTranslation("SignUp");
-
-  const navigate = useNavigate();
+const Login: React.FC = () => {
+  const { t } = useTranslation("SignIn");
 
   const [email, setEmail] = useState<string>("");
-  const [name, setName] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [pwdType, setPwdType] = useState<"text" | "password">("password");
-  const [termsChecked, setTermsChecked] = useState<boolean>(false);
+
+  const navigate = useNavigate();
 
   const handleChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -34,9 +33,6 @@ const SignUp: React.FC = () => {
       switch (event?.target?.id) {
         case "email":
           setEmail(value);
-          break;
-        case "name":
-          setName(value);
           break;
         case "password":
           setPassword(value);
@@ -61,12 +57,6 @@ const SignUp: React.FC = () => {
             placeholder={t("form.email.placeholder")}
           />
           <Input
-            id="name"
-            value={name}
-            onChange={handleChange}
-            placeholder={t("form.name.placeholder")}
-          />
-          <Input
             id="password"
             type={pwdType}
             value={password}
@@ -82,37 +72,17 @@ const SignUp: React.FC = () => {
               }
             />
           </Input>
-          <Checkbox
-            id="terms"
-            isChecked={termsChecked}
-            label={
-              <div>
-                {t("terms")}&nbsp;
-                <a
-                  href="https://www.google.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {t("termsLink")}
-                </a>
-              </div>
-            }
-            onChange={(event) => setTermsChecked(event?.target?.checked)}
-          />
           <div className="vertical-flex">
             <div className="vertical-flex">
-              <Button
-                id="register-btn"
-                onClick={() => navigate(routes.register)}
-              >
-                {t("register")}
+              <Button id="login-btn" onClick={() => navigate(routes.dashboard)}>
+                {t("login")}
               </Button>
               <div className="alternate-text">{t("or")}</div>
               <GoogleLogin />
             </div>
             <div className="login-link">
-              {t("existingAccount.label")}{" "}
-              <Link to={routes.login}>{t("existingAccount.link")}</Link>
+              {t("newAccount.label")}{" "}
+              <Link to={routes.register}>{t("newAccount.link")}</Link>
             </div>
           </div>
         </form>
@@ -121,4 +91,4 @@ const SignUp: React.FC = () => {
   );
 };
 
-export default SignUp;
+export default Login;
