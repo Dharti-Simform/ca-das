@@ -26,11 +26,9 @@ interface ICheckboxProps {
 
 /* 
   TO-DO: 
-  1. Make the label clickable
   2. CSS changes to Checkbox
   -> Border radius and color
   -> Hover effect
-  -> How to change the CSS of tick
 */
 
 const Checkbox: React.FC<ICheckboxProps> = (props) => {

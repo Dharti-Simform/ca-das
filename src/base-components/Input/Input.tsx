@@ -30,12 +30,6 @@ interface IInputProps {
   children?: React.ReactNode;
 }
 
-/* 
-  TO-DO: 
-  - Border color on focus
-  - Font family looks different than Figma
-  - Width issue
-*/
 const Input: React.FC<IInputProps> = (props) => {
   const {
     id,

@@ -14,10 +14,6 @@ import { ReactComponent as EyeIcon } from "src/assets/icons/eye.svg";
 
 import "../signup/SignUp.scss";
 
-/* 
-  TO-DO:
-  - Should we apply fixed width to container or use padding?
-*/
 const Login: React.FC = () => {
   const { t } = useTranslation("SignIn");
 

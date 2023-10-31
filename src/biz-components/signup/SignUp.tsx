@@ -13,10 +13,6 @@ import GoogleLogin from "../google-login/GoogleLogin";
 import { Link, useNavigate } from "react-router-dom";
 import { routes } from "src/routes/routes";
 
-/* 
-  TO-DO:
-  - Should we apply fixed width to container or use padding?
-*/
 const SignUp: React.FC = () => {
   const { t } = useTranslation("SignUp");
 

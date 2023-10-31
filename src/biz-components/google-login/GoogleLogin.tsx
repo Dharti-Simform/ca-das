@@ -7,11 +7,6 @@ import "../google-login/GoogleLogin.scss";
 import { Link } from "react-router-dom";
 import { routes } from "src/routes/routes";
 
-/* 
-    TO-DO: 
-    - Does vertical-middle work only with block level elements?
-    - Width not changing
-*/
 const GoogleLogin: React.FC = () => {
   const { t } = useTranslation("SignUp");
 
