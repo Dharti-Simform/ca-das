@@ -32,7 +32,8 @@ const Navigation: React.FC = () => {
         value={search}
         onChange={(e) => setSearch(e?.target?.value || "")}
         placeholder={t("search")}
-        containerClassName="input-icon-wrapper search"
+        containerClassName="input-icon-wrapper search-container"
+        inputClassName="search-box"
       >
         <SearchIcon width={24} height={24} className="eye-icon icon" />
       </Input>

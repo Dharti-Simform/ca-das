@@ -100,7 +100,7 @@ const SignUp: React.FC = () => {
             <div className="vertical-flex">
               <Button
                 id="register-btn"
-                onClick={() => navigate(routes.register)}
+                onClick={() => navigate(routes.dashboard)}
               >
                 {t("register")}
               </Button>

@@ -20,8 +20,9 @@
       flex-shrink: 0;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       height: 10rem;
+      padding-left: 2.4rem;
 
       svg {
         width: 118px;
@@ -32,7 +33,7 @@
     .top-right {
       flex-shrink: 0;
       display: flex;
-      // padding: 4rem 2.4rem;
+      padding-right: 2.4rem;
       height: 10rem;
     }
 

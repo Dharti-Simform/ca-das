@@ -88,9 +88,8 @@ a {
 
 .input-icon-wrapper .icon {
   position: absolute;
-  right: 0;
+  right: 16px;
   top: 50%;
-  translate: (0, 50%);
   transform: translateY(-50%);
   cursor: pointer;
 }

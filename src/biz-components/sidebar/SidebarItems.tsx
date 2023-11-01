@@ -4,6 +4,9 @@ import SidebarItem from "./SidebarItem";
 
 import { ReactComponent as ChatIcon } from "../../assets/icons/chat.svg";
 import { ReactComponent as ScheduleIcon } from "../../assets/icons/schedule.svg";
+import { ReactComponent as DashboardIcon } from "../../assets/icons/window.svg";
+import { ReactComponent as ClockIcon } from "../../assets/icons/clock.svg";
+import { ReactComponent as TickmarkIcon } from "../../assets/icons/tickmark.svg";
 
 import "./Sidebar.scss";
 
@@ -13,7 +16,7 @@ const SidebarItems: React.FC = () => {
   return (
     <div className="sidebar-wrapper">
       <SidebarItem
-        Icon={<ChatIcon />}
+        Icon={<DashboardIcon />}
         name={t("sidebar.dashboard")}
         isActive={true}
       />
@@ -22,7 +25,7 @@ const SidebarItems: React.FC = () => {
         name={t("sidebar.message")}
       />
       <SidebarItem
-        Icon={<ChatIcon width={24} height={24} />}
+        Icon={<TickmarkIcon width={24} height={24} />}
         name={t("sidebar.project")}
       />
       <SidebarItem
@@ -30,7 +33,7 @@ const SidebarItems: React.FC = () => {
         name={t("sidebar.schedule")}
       />
       <SidebarItem
-        Icon={<ChatIcon width={24} height={24} />}
+        Icon={<ClockIcon width={24} height={24} />}
         name={t("sidebar.activity")}
       />
     </div>
