@@ -17,7 +17,7 @@ import Button from "../../base-components/Button/Button";
     - Make same height of Logo and Navigation
 */
 const Navigation: React.FC = () => {
-  const { t } = useTranslation("Dashboard");
+  const { t } = useTranslation("Sidebar");
 
   const [search, setSearch] = useState<string>("");
 

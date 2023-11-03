@@ -3,13 +3,13 @@ import { initReactI18next } from 'react-i18next';
 
 import SignUp from "./en/SignUp.json";
 import SignIn from "./en/SignIn.json";
-import Dashboard from "./en/Dashboard.json";
+import Sidebar from "./en/Sidebar.json";
 
 const resources = {
     en: {
         SignIn,
         SignUp,
-        Dashboard
+        Sidebar
     }
 }
 

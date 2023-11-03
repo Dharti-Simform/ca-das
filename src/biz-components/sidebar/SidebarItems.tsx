@@ -11,7 +11,7 @@ import { ReactComponent as TickmarkIcon } from "../../assets/icons/tickmark.svg"
 import "./Sidebar.scss";
 
 const SidebarItems: React.FC = () => {
-  const { t } = useTranslation("Dashboard");
+  const { t } = useTranslation("Sidebar");
 
   return (
     <div className="sidebar-wrapper">

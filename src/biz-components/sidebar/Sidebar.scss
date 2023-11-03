@@ -37,3 +37,32 @@
     }
   }
 }
+
+.team-wrapper {
+  position: absolute;
+  bottom: 40px;
+  width: 20.2rem;
+
+  .team {
+    margin: 1.6rem 0;
+    position: relative;
+    .team-logo {
+      margin-right: 1rem;
+      // .dot {
+      //   position: absolute;
+      //   bottom: 3px;
+      //   right: 0;
+      // }
+    }
+  }
+
+  .add-team {
+    cursor: pointer;
+    svg {
+      path {
+        fill: $primary-black;
+      }
+      margin-right: 8px;
+    }
+  }
+}

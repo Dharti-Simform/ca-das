@@ -13,7 +13,11 @@
     "title": "MY TEAM",
     "teams": "TEAMS",
     "addNewTeam": "Add New Team",
-    "addTeam": "Add Team"
+    "addTeam": "Add Team",
+    "team1": {
+      "title": "Carrot Team",
+      "handle": "@carrotteam"
+    }
   },
   "projects": {
     "title": "MY PROJECTS",
