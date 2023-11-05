@@ -1,48 +1,41 @@
 import React from "react";
 
-import "../card/Card.scss";
-import classNames from "classnames";
+import { ReactComponent as ThreeDots } from "src/assets/icons/three-dots.svg";
 
-/* Padding for sizes
-xl: 48px
-lg: 24px
-md: 16px
-sm: 8px
-*/
-export type CardType = "xl" | "lg" | "md" | "sm";
+import "src/biz-components/card/Card.scss";
 
-export enum CardBGType {
-  white = "white",
-  grey = "grey",
+interface Iprops {
+  logo?: React.ReactNode;
+  title: string;
+  subtitle: string;
+  teammateArray: Array<string>;
+  teammateCount?: number;
 }
 
-interface IProps {
-  children: React.ReactNode;
-  bg?: CardBGType;
-  type?: CardType;
-  hideRightBorderRadius?: boolean;
-  className?: string;
-}
-
-const Card: React.FC<IProps> = ({
-  children,
-  bg = CardBGType.white,
-  type = "lg",
-  hideRightBorderRadius = false,
-  className = "",
+const Card: React.FC<Iprops> = ({
+  title,
+  subtitle,
+  logo,
+  teammateArray,
+  teammateCount = 0,
 }) => (
-  <div
-    className={classNames(
-      "card",
-      `card-${type}`,
-      {
-        "card-grey": bg === CardBGType.grey,
-        "no-right-radius": hideRightBorderRadius,
-      },
-      className
-    )}
-  >
-    {children}
+  <div>
+    <div className="horizontal-flex justify-space-between align-flex-start">
+      <div className="horizontal-flex">
+        {logo && <div className="logo">{logo}</div>}
+        <div>
+          <h5 className="title_2">{title}</h5>
+          <div className="title_4 grey-font">{subtitle}</div>
+        </div>
+      </div>
+      <ThreeDots className="cursor-pointer" />
+    </div>
+    <div>
+      {(teammateArray || []).map((path) => (
+        <img src={path} alt="user" className="teammate" />
+      ))}
+      {!!teammateCount && <span>{teammateCount}</span>}
+    </div>
   </div>
 );
 

@@ -82,8 +82,20 @@ a {
   justify-content: center;
 }
 
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-flex-start {
+  align-items: flex-start;
+}
+
 .grey-font {
   color: #8f92a1;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .input-icon-wrapper {
@@ -133,4 +145,26 @@ a {
 
 .grey-font {
   color: #8f92a1;
+}
+
+/* Grid classes */
+.grid-container {
+  display: grid;
+  grid-gap: 4rem;
+}
+
+.three-col-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.add-action-card {
+  cursor: pointer;
+}
+
+.add-action-card svg {
+  margin-right: 8px;
+}
+
+.add-action-card svg path {
+  fill: #171717;
 }

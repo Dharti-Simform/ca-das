@@ -1,0 +1,42 @@
+@import "src/assets/_variables.scss";
+
+.card {
+  border-radius: 16px;
+  padding: 2.4rem;
+
+  &-xl {
+    padding: 4.8rem;
+  }
+
+  &-lg {
+    padding: 2.4rem;
+  }
+
+  &-md {
+    padding: 1.6rem;
+  }
+
+  &-sm {
+    padding: 0.8rem;
+  }
+
+  &-grey {
+    background-color: $light-grey;
+    border-color: $light-grey;
+  }
+
+  &-white {
+    background-color: $primary-white;
+    border-color: $primary-white;
+  }
+
+  &.no-right-radius {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  &.no-bottom-radius {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

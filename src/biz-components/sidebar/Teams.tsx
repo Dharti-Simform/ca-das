@@ -1,5 +1,5 @@
 import React from "react";
-import Card, { CardBGType } from "../card/Card";
+import CardLayout, { CardBGType } from "../../layouts/card-layout/CardLayout";
 import { useTranslation } from "react-i18next";
 
 import { ReactComponent as TeamLogo } from "src/assets/images/Team1.svg";
@@ -13,7 +13,11 @@ const Teams: React.FC = () => {
   return (
     <div className="team-wrapper">
       <h5 className="title_3 grey-font">{t("team.teams")}</h5>
-      <Card bg={CardBGType.grey} className="horizontal-flex team" type="md">
+      <CardLayout
+        bg={CardBGType.grey}
+        className="horizontal-flex team"
+        size="md"
+      >
         <div className="team-logo">
           <TeamLogo width={40} height={40} />
           {/* <div className="dot">
@@ -24,15 +28,15 @@ const Teams: React.FC = () => {
           <h5 className="title_2">{t("team.team1.title")}</h5>
           <div className="title_4 grey-font">{t("team.team1.handle")}</div>
         </div>
-      </Card>
-      <Card
-        type="sm"
+      </CardLayout>
+      <CardLayout
+        size="sm"
         bg={CardBGType.grey}
-        className="horizontal-flex justify-center add-team"
+        className="horizontal-flex justify-center add-action-card"
       >
         <PlusIcon width={24} height={24} />
         <span className="title_2">{t("team.addNewTeam")}</span>
-      </Card>
+      </CardLayout>
     </div>
   );
 };

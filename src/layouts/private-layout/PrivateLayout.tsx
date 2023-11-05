@@ -28,7 +28,7 @@ const PrivateLayout: React.FC<IProps> = ({ children }) => (
       <div className="top-right">
         <Navigation />
       </div>
-      <div className="bottom right-bottom">Content</div>
+      <div className="bottom right-bottom">{children}</div>
     </div>
   </div>
 );

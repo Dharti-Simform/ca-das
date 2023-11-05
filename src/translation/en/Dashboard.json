@@ -1,0 +1,9 @@
+{
+  "team": {
+    "title": "MY TEAM",
+    "team1": "Carrot Labs",
+    "team2": "Carrot Team",
+    "members": "{{count}} members",
+    "addTeam": "Add Team"
+  }
+}
