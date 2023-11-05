@@ -1,3 +1,29 @@
+@import "src/assets/_variables.scss";
+
 .logo {
   margin-right: 1.6rem;
+}
+
+.footer {
+  margin-top: 2.6rem;
+
+  * {
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+  }
+
+  :not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .teammate-count {
+    background-color: $light-grey;
+    color: $dark-grey;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 24px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
 }

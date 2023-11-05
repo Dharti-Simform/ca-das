@@ -18,7 +18,7 @@ import User6 from "src/assets/avatars/User6.png";
 
 import "src/biz-components/dashboard/Dashboard.scss";
 
-const PathOne = [User2, User3, User4, User5, User6];
+const LogoPath = [User2, User3, User4, User5, User6];
 
 const Dashboard: React.FC = () => {
   const { t } = useTranslation("Dashboard");
@@ -38,7 +38,8 @@ const Dashboard: React.FC = () => {
               title={t("team.team1")}
               subtitle={t("team.members", { count: 30 })}
               logo={<TeamOne width={40} height={40} className="team-profile" />}
-              teammateArray={PathOne}
+              teammateArray={LogoPath}
+              teammateCount={9}
             />
           </CardLayout>
           <CardLayout size="lg">
@@ -46,7 +47,7 @@ const Dashboard: React.FC = () => {
               title={t("team.team2")}
               subtitle={t("team.members", { count: 30 })}
               logo={<TeamTwo width={40} height={40} className="team-profile" />}
-              teammateArray={[]}
+              teammateArray={LogoPath}
             />
           </CardLayout>
           <CardLayout

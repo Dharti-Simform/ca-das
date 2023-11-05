@@ -90,6 +90,10 @@ a {
   align-items: flex-start;
 }
 
+.align-center {
+  align-items: center;
+}
+
 .grey-font {
   color: #8f92a1;
 }

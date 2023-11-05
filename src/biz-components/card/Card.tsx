@@ -12,6 +12,11 @@ interface Iprops {
   teammateCount?: number;
 }
 
+/* 
+!TO-DO:
+1. Teammate count size issue
+*/
+
 const Card: React.FC<Iprops> = ({
   title,
   subtitle,
@@ -30,11 +35,13 @@ const Card: React.FC<Iprops> = ({
       </div>
       <ThreeDots className="cursor-pointer" />
     </div>
-    <div>
+    <div className="footer horizontal-flex align-center">
       {(teammateArray || []).map((path) => (
         <img src={path} alt="user" className="teammate" />
       ))}
-      {!!teammateCount && <span>{teammateCount}</span>}
+      {!!teammateCount && (
+        <div className="teammate-count">+{teammateCount}</div>
+      )}
     </div>
   </div>
 );
