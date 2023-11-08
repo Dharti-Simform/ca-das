@@ -1,6 +1,22 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2.4rem;
+}
+
 .teams-wrapper {
   height: fit-content;
-  width: 100%;
+  grid-auto-rows: 1fr;
+
+  .title {
+    margin-bottom: 2.6rem;
+  }
+}
+
+.projects-wrapper {
+  flex-grow: 1;
+  grid-auto-rows: 1fr;
 
   .title {
     margin-bottom: 2.6rem;

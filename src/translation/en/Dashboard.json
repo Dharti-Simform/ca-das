@@ -5,5 +5,16 @@
     "team2": "Carrot Team",
     "members": "{{count}} members",
     "addTeam": "Add Team"
+  },
+  "project": {
+    "title": "MY PROJECTS",
+    "project1": "CaPay Digital Wallet iOS UI Kit",
+    "project2": "Product Review for UI8 Market",
+    "project3": "Development Carrotlabs.co",
+    "project4": "UX Research for Product",
+    "project5": "Design Website for Carrotlabs",
+    "daysLeft": "{{days}} days left",
+    "dayLeft": "{{day}} day left",
+    "addProject": "Add Project"
   }
 }

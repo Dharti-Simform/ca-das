@@ -4,6 +4,13 @@
   margin-right: 1.6rem;
 }
 
+.card-title {
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .footer {
   margin-top: 2.6rem;
 

@@ -29,7 +29,8 @@ const Card: React.FC<Iprops> = ({
       <div className="horizontal-flex">
         {logo && <div className="logo">{logo}</div>}
         <div>
-          <h5 className="title_2">{title}</h5>
+          {/* !TO-DO: Flex grow or width not working */}
+          <h5 className="title_2 card-title">{title}</h5>
           <div className="title_4 grey-font">{subtitle}</div>
         </div>
       </div>
