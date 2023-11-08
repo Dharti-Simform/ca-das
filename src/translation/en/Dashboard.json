@@ -3,7 +3,7 @@
     "title": "MY TEAM",
     "team1": "Carrot Labs",
     "team2": "Carrot Team",
-    "members": "{{count}} members",
+    "members": "{{count}} Members",
     "addTeam": "Add Team"
   },
   "project": {

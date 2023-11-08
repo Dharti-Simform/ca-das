@@ -10,6 +10,7 @@ interface Iprops {
   subtitle: string;
   teammateArray: Array<string>;
   teammateCount?: number;
+  children?: React.ReactNode;
 }
 
 /* 
@@ -23,6 +24,7 @@ const Card: React.FC<Iprops> = ({
   logo,
   teammateArray,
   teammateCount = 0,
+  children,
 }) => (
   <div>
     <div className="horizontal-flex justify-space-between align-flex-start">
@@ -30,12 +32,13 @@ const Card: React.FC<Iprops> = ({
         {logo && <div className="logo">{logo}</div>}
         <div>
           {/* !TO-DO: Flex grow or width not working */}
-          <h5 className="title_2 card-title">{title}</h5>
+          <h5 className="title_1 card-title">{title}</h5>
           <div className="title_4 grey-font">{subtitle}</div>
         </div>
       </div>
       <ThreeDots className="cursor-pointer" />
     </div>
+    {children}
     <div className="footer horizontal-flex align-center">
       {(teammateArray || []).map((path) => (
         <img src={path} alt="user" className="teammate" />

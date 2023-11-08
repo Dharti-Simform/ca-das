@@ -17,8 +17,15 @@
 .projects-wrapper {
   flex-grow: 1;
   grid-auto-rows: 1fr;
+  padding-bottom: 1.8rem;
 
   .title {
     margin-bottom: 2.6rem;
+  }
+
+  .tag-container {
+    gap: 16px;
+    margin-top: 1.6rem;
+    margin-bottom: 3rem;
   }
 }

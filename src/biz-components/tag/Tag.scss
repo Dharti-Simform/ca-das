@@ -1,0 +1,41 @@
+@import "src/assets/_variables.scss";
+
+.tag {
+  display: flex;
+  padding: 2px 8px;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 24px;
+  width: fit-content;
+
+  &-grey {
+    background: $cool-grey;
+    color: $dark-grey;
+
+    svg path {
+      fill: $dark-grey;
+    }
+  }
+
+  &-yellow {
+    background: $c-light-yellow;
+    color: $c-yellow;
+
+    svg path {
+      fill: $c-yellow;
+    }
+  }
+
+  &-red {
+    background: $-light-red;
+    color: $dark-red;
+
+    svg path {
+      fill: $dark-red;
+    }
+  }
+}

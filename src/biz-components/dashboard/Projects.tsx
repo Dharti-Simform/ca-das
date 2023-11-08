@@ -12,10 +12,14 @@ import User3 from "src/assets/avatars/User3.png";
 import User4 from "src/assets/avatars/User4.png";
 import User5 from "src/assets/avatars/User5.png";
 import User6 from "src/assets/avatars/User6.png";
+import { ReactComponent as AttachmentIcon } from "src/assets/icons/attachment.svg";
+import { ReactComponent as ClockIcon } from "src/assets/icons/clock.svg";
 
 import "src/biz-components/dashboard/Dashboard.scss";
+import Tag from "../tag/Tag";
+import ProgressBar from "../progressbar/ProgressBar";
 
-const LogoPath = [User2, User3, User4, User5, User6];
+const LogoPath = [User3, User4, User2];
 
 // !TO-DO: Whitespace wrap not working
 const Projects: React.FC = () => {
@@ -35,36 +39,94 @@ const Projects: React.FC = () => {
             title={t("project.project1")}
             subtitle={t("team.team1")}
             teammateArray={LogoPath}
-            teammateCount={9}
-          />
+          >
+            <>
+              <div className="horizontal-flex tag-container">
+                <Tag icon={<AttachmentIcon />} text="13" />
+                <Tag
+                  icon={<ClockIcon height={16} width={16} />}
+                  text={t("project.daysLeft", { days: 5 })}
+                  color="yellow"
+                />
+              </div>
+              <ProgressBar percentage={80} />
+            </>
+          </Card>
         </CardLayout>
         <CardLayout size="lg">
           <Card
             title={t("project.project2")}
             subtitle={t("team.team1")}
             teammateArray={LogoPath}
-          />
+          >
+            <>
+              <div className="horizontal-flex tag-container">
+                <Tag icon={<AttachmentIcon />} text="5" />
+                <Tag
+                  icon={<ClockIcon height={16} width={16} />}
+                  text={t("project.dayLeft", { day: 1 })}
+                  color="red"
+                />
+              </div>
+              <ProgressBar percentage={48} />
+            </>
+          </Card>
         </CardLayout>
         <CardLayout size="lg">
           <Card
             title={t("project.project3")}
             subtitle={t("team.team2")}
             teammateArray={LogoPath}
-          />
+          >
+            <>
+              <div className="tag-container">
+                <Tag
+                  icon={<ClockIcon height={16} width={16} />}
+                  text={t("project.daysLeft", { days: 10 })}
+                  color="grey"
+                />
+              </div>
+              <ProgressBar percentage={62} />
+            </>
+          </Card>
         </CardLayout>
         <CardLayout size="lg">
           <Card
             title={t("project.project4")}
             subtitle={t("team.team1")}
             teammateArray={LogoPath}
-          />
+          >
+            <>
+              <div className="horizontal-flex tag-container">
+                <Tag icon={<AttachmentIcon />} text="7" />
+                <Tag
+                  icon={<ClockIcon height={16} width={16} />}
+                  text={t("project.daysLeft", { days: 10 })}
+                  color="grey"
+                />
+              </div>
+              <ProgressBar percentage={23} />
+            </>
+          </Card>
         </CardLayout>
         <CardLayout size="lg">
           <Card
             title={t("project.project5")}
             subtitle={t("team.team2")}
             teammateArray={LogoPath}
-          />
+          >
+            <>
+              <div className="horizontal-flex tag-container">
+                <Tag icon={<AttachmentIcon />} text="5" />
+                <Tag
+                  icon={<ClockIcon height={16} width={16} />}
+                  text={t("project.dayLeft", { day: 1 })}
+                  color="red"
+                />
+              </div>
+              <ProgressBar percentage={77} />
+            </>
+          </Card>
         </CardLayout>
         <CardLayout
           size="lg"

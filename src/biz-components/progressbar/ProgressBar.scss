@@ -1,0 +1,19 @@
+@import "src/assets/_variables.scss";
+
+.parent {
+  width: 90%;
+  background-color: $cool-grey;
+  position: relative;
+  height: 4px;
+  border-radius: 3px;
+  margin-right: 1.4rem;
+
+  .child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $science-blue;
+    height: 4px;
+    border-radius: 3px;
+  }
+}
