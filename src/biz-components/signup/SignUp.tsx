@@ -45,76 +45,74 @@ const SignUp: React.FC = () => {
   );
 
   return (
-    <PublicLayout>
-      <div className="form-container signup-form-wrapper">
-        <h2>{t("title")}</h2>
-        <p className="grey-font">{t("subtitle")}</p>
-        <form className="signup-form">
-          <Input
-            id="email"
-            value={email}
-            onChange={handleChange}
-            placeholder={t("form.email.placeholder")}
-          />
-          <Input
-            id="name"
-            value={name}
-            onChange={handleChange}
-            placeholder={t("form.name.placeholder")}
-          />
-          <Input
-            id="password"
-            type={pwdType}
-            value={password}
-            onChange={handleChange}
-            placeholder={t("form.password.placeholder")}
-            containerClassName="input-icon-wrapper"
-          >
-            <EyeIcon
-              width={24}
-              height={24}
-              className="icon"
-              onClick={() =>
-                setPwdType(pwdType === "password" ? "text" : "password")
-              }
-            />
-          </Input>
-          <Checkbox
-            id="terms"
-            isChecked={termsChecked}
-            label={
-              <div>
-                {t("terms")}&nbsp;
-                <a
-                  href="https://www.google.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {t("termsLink")}
-                </a>
-              </div>
+    <div className="form-container signup-form-wrapper">
+      <h2>{t("title")}</h2>
+      <p className="grey-font">{t("subtitle")}</p>
+      <form className="signup-form">
+        <Input
+          id="email"
+          value={email}
+          onChange={handleChange}
+          placeholder={t("form.email.placeholder")}
+        />
+        <Input
+          id="name"
+          value={name}
+          onChange={handleChange}
+          placeholder={t("form.name.placeholder")}
+        />
+        <Input
+          id="password"
+          type={pwdType}
+          value={password}
+          onChange={handleChange}
+          placeholder={t("form.password.placeholder")}
+          containerClassName="input-icon-wrapper"
+        >
+          <EyeIcon
+            width={24}
+            height={24}
+            className="icon"
+            onClick={() =>
+              setPwdType(pwdType === "password" ? "text" : "password")
             }
-            onChange={(event) => setTermsChecked(event?.target?.checked)}
           />
-          <div className="vertical-flex">
-            <div className="vertical-flex">
-              <Button
-                id="register-btn"
-                onClick={() => navigate(routes.dashboard)}
+        </Input>
+        <Checkbox
+          id="terms"
+          isChecked={termsChecked}
+          label={
+            <div>
+              {t("terms")}&nbsp;
+              <a
+                href="https://www.google.com/"
+                target="_blank"
+                rel="noreferrer"
               >
-                {t("register")}
-              </Button>
-              <div className="alternate-text">{t("or")}</div>
-              <GoogleLogin />
+                {t("termsLink")}
+              </a>
             </div>
-            <div className="login-link">
-              {t("existingAccount.label")}{" "}
-              <Link to={routes.login}>{t("existingAccount.link")}</Link>
-            </div>
+          }
+          onChange={(event) => setTermsChecked(event?.target?.checked)}
+        />
+        <div className="vertical-flex">
+          <div className="vertical-flex">
+            <Button
+              id="register-btn"
+              onClick={() => navigate(routes.dashboard)}
+            >
+              {t("register")}
+            </Button>
+            <div className="alternate-text">{t("or")}</div>
+            <GoogleLogin />
           </div>
-        </form>
-      </div>
-    </PublicLayout>
+          <div className="login-link">
+            {t("existingAccount.label")}{" "}
+            <Link to={routes.login}>{t("existingAccount.link")}</Link>
+          </div>
+        </div>
+      </form>
+    </div>
   );
 };
 

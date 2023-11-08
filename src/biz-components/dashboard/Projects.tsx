@@ -10,8 +10,6 @@ import { ReactComponent as PlusIcon } from "src/assets/icons/plus-icon.svg";
 import User2 from "src/assets/avatars/User2.jpg";
 import User3 from "src/assets/avatars/User3.png";
 import User4 from "src/assets/avatars/User4.png";
-import User5 from "src/assets/avatars/User5.png";
-import User6 from "src/assets/avatars/User6.png";
 import { ReactComponent as AttachmentIcon } from "src/assets/icons/attachment.svg";
 import { ReactComponent as ClockIcon } from "src/assets/icons/clock.svg";
 
