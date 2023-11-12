@@ -26,6 +26,7 @@
 
     .chatbox {
       flex-grow: 1;
+      position: relative;
 
       .chat-header {
         padding: 4rem;
@@ -49,6 +50,41 @@
 
       .chat-body {
         padding: 2.4rem 4rem 3.2rem 4rem;
+
+        height: calc(100% - 280px);
+        overflow: hidden;
+        overflow-y: scroll;
+      }
+
+      .chat-footer {
+        position: absolute;
+        width: 100%;
+        bottom: 3.2rem;
+        width: calc(100% - 4.8rem);
+        margin-left: 2.4rem;
+
+        padding: 1.2rem 2.4rem 1.6rem 1.6rem;
+
+        gap: 16px;
+
+        .comment-input {
+          margin: 0;
+
+          input {
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            font-size: 14px;
+            line-height: normal;
+            padding: 1rem 0;
+          }
+        }
+
+        .input-option {
+          :first-child {
+            margin-right: 2.4rem;
+          }
+        }
       }
     }
 

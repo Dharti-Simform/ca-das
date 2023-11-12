@@ -12,17 +12,22 @@ const CommentBox: React.FC = () => {
   const [comment, setComment] = useState("");
 
   return (
-    <CardLayout bg={CardBGType.grey} size="md" className="message-input">
+    <CardLayout
+      bg={CardBGType.grey}
+      size="md"
+      className="chat-footer horizontal-flex align-center justify-space-between"
+    >
       <img src={User1} alt="user" width={40} height={40} />
       <Input
         id="comment"
         value={comment}
         onChange={(e) => setComment(e.target.value)}
         placeholder="Write a comment…"
+        containerClassName="comment-input"
       />
-      <div>
-        <EmojiIcon width={24} height={24} />
-        <AttachmentIcon width={24} height={24} />
+      <div className="input-option horizontal-flex">
+        <EmojiIcon width={24} height={24} className="cursor-pointer" />
+        <AttachmentIcon width={24} height={24} className="cursor-pointer" />
       </div>
     </CardLayout>
   );

@@ -2,7 +2,6 @@ import React, { useCallback, useState } from "react";
 
 import { useTranslation } from "react-i18next";
 
-import PublicLayout from "src/layouts/public-layout/PublicLayout";
 import Input from "src/base-components/Input/Input";
 import { ReactComponent as EyeIcon } from "src/assets/icons/eye.svg";
 

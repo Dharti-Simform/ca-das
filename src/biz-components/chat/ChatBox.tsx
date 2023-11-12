@@ -7,6 +7,7 @@ import { ReactComponent as VideoCallIcon } from "src/assets/icons/video-call.svg
 
 import "src/biz-components/chat/Chat.scss";
 import CommentBox from "./CommentBox";
+import ChatBody from "./ChatBody";
 
 const ChatBox: React.FC = () => (
   <div className="chatbox">
@@ -24,7 +25,7 @@ const ChatBox: React.FC = () => (
         <ThreeDots className="cursor-pointer" />
       </div>
     </div>
-    <ChatBox />
+    <ChatBody />
     <CommentBox />
   </div>
 );
