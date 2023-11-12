@@ -7,16 +7,10 @@ import { NavLink } from "react-router-dom";
 interface IProps {
   name: string;
   Icon: React.ReactElement;
-  isActive?: boolean;
   path: string;
 }
 
-const SidebarItem: React.FC<IProps> = ({
-  name,
-  Icon,
-  isActive = false,
-  path,
-}) => (
+const SidebarItem: React.FC<IProps> = ({ name, Icon, path }) => (
   <NavLink to={path} className={classNames("sidebar-item")}>
     <>
       {Icon}

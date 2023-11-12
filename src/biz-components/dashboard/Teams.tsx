@@ -10,15 +10,8 @@ import { ReactComponent as TeamOne } from "src/assets/images/Team1.svg";
 import { ReactComponent as TeamTwo } from "src/assets/images/Team2.svg";
 import { ReactComponent as PlusIcon } from "src/assets/icons/plus-icon.svg";
 
-import User2 from "src/assets/avatars/User2.jpg";
-import User3 from "src/assets/avatars/User3.png";
-import User4 from "src/assets/avatars/User4.png";
-import User5 from "src/assets/avatars/User5.png";
-import User6 from "src/assets/avatars/User6.png";
-
 import "src/biz-components/dashboard/Dashboard.scss";
-
-const LogoPath = [User2, User3, User4, User5, User6];
+import { TEAMS_LOGO } from "src/utils/data";
 
 const Teams: React.FC = () => {
   const { t } = useTranslation("Dashboard");
@@ -37,7 +30,7 @@ const Teams: React.FC = () => {
             title={t("team.team1")}
             subtitle={t("team.members", { count: 30 })}
             logo={<TeamOne width={40} height={40} />}
-            teammateArray={LogoPath}
+            teammateArray={TEAMS_LOGO}
             teammateCount={9}
           />
         </CardLayout>
@@ -46,7 +39,7 @@ const Teams: React.FC = () => {
             title={t("team.team2")}
             subtitle={t("team.members", { count: 30 })}
             logo={<TeamTwo width={40} height={40} />}
-            teammateArray={LogoPath}
+            teammateArray={TEAMS_LOGO}
           />
         </CardLayout>
         <CardLayout

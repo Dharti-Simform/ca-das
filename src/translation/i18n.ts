@@ -5,13 +5,15 @@ import SignUp from "./en/SignUp.json";
 import SignIn from "./en/SignIn.json";
 import Sidebar from "./en/Sidebar.json";
 import Dashboard from "./en/Dashboard.json";
+import Chat from "./en/Chat.json";
 
 const resources = {
     en: {
         SignIn,
         SignUp,
         Sidebar,
-        Dashboard
+        Dashboard,
+        Chat
     }
 }
 

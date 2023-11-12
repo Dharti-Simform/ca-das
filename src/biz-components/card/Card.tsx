@@ -40,8 +40,8 @@ const Card: React.FC<Iprops> = ({
     </div>
     {children}
     <div className="footer horizontal-flex align-center">
-      {(teammateArray || []).map((path) => (
-        <img src={path} alt="user" className="teammate" />
+      {(teammateArray || []).map((path, index) => (
+        <img src={path} alt="user" className="teammate" key={index} />
       ))}
       {!!teammateCount && (
         <div className="teammate-count">+{teammateCount}</div>

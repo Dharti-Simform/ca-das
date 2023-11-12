@@ -19,7 +19,6 @@ const SidebarItems: React.FC = () => {
       <SidebarItem
         Icon={<DashboardIcon />}
         name={t("sidebar.dashboard")}
-        isActive={true}
         path={routes.dashboard}
       />
       <SidebarItem

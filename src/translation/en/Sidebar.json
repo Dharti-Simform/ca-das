@@ -1,5 +1,6 @@
 {
   "user": "Hi {{name}}!",
+  "message": "Message",
   "search": "Search...",
   "startProject": "Start Project",
   "sidebar": {

@@ -172,3 +172,20 @@ a {
 .add-action-card svg path {
   fill: #171717;
 }
+
+.plus-icon {
+  fill: #8f92a1;
+}
+
+.plus-icon path {
+  fill: #8f92a1;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.title-letter-spacing {
+  letter-spacing: 1px;
+}
