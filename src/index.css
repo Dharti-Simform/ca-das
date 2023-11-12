@@ -193,3 +193,15 @@ ul {
 .text-center {
   text-align: center;
 }
+
+.unread-count {
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 8px;
+  color: white;
+}

@@ -19,8 +19,6 @@ interface IButtonProps {
 
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
-
-// !TO-DO: Add loader
 const Button: React.FC<IButtonProps> = (props) => {
   const {
     id,

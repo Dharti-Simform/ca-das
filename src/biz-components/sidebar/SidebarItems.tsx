@@ -23,7 +23,12 @@ const SidebarItems: React.FC = () => {
       />
       <SidebarItem
         Icon={<ChatIcon width={24} height={24} />}
-        name={t("sidebar.message")}
+        name={
+          <div className="horizontal-flex justify-space-between">
+            <span>{t("sidebar.message")}</span>
+            <span className="unread-count">{1}</span>
+          </div>
+        }
         path={routes.messages}
       />
       <SidebarItem
