@@ -24,7 +24,7 @@ type GroupType = {
 
 export type MessageType = {
     message: string,
-    isSender: boolean,
+    otherUser: boolean,
     attachment?: string
 }
 
@@ -88,23 +88,23 @@ export const GROUPS: GroupList = [{
 export const MESSAGES: MessageType[] = [
     {
         message: "Hello Linh!",
-        isSender: false
+        otherUser: true
     },
     {
         message: "Can you send me preview image of reading app project?",
-        isSender: false
+        otherUser: true
     },
     {
         message: "Okay bro! Wait a minute…",
-        isSender: true
+        otherUser: false
     },
     {
         message: "Here you are bro. Please check it",
-        isSender: true
+        otherUser: false
     },
     {
         message: "",
-        isSender: true,
+        otherUser: false,
         attachment: ChatPhoto
     }
 ]

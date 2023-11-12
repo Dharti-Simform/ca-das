@@ -54,6 +54,71 @@
         height: calc(100% - 280px);
         overflow: hidden;
         overflow-y: scroll;
+
+        .time {
+          letter-spacing: 1px;
+          margin-bottom: 2.4rem;
+        }
+
+        .messages {
+          & > * {
+            margin-top: 8px;
+            width: 100%;
+          }
+
+          :first-child {
+            margin-top: 0;
+          }
+
+          .message-item {
+            display: flex;
+            flex-direction: row;
+
+            &.mt-24 {
+              margin-top: 2.4rem;
+            }
+          }
+
+          .self {
+            justify-content: flex-end;
+          }
+
+          .media {
+            padding: 0;
+            position: relative;
+            box-sizing: border-box;
+
+            .attachment {
+              padding: 0;
+              background-color: transparent;
+
+              :nth-child(2) {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+              }
+            }
+          }
+
+          .msg {
+            width: fit-content;
+            max-width: 60%;
+            padding: 1.4rem 1.6rem;
+
+            border-radius: 16px;
+            padding: 1.4rem 1.6rem;
+            font-size: 14px;
+            font-weight: 400;
+
+            &.right-block {
+              background-color: $light-blue;
+            }
+
+            &.left-block {
+              background-color: $cool-grey;
+            }
+          }
+        }
       }
 
       .chat-footer {
