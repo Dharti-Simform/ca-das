@@ -54,6 +54,11 @@ h6 {
 
 a {
   color: var(--blue-b-100, #0052cc);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .form-container {
@@ -158,7 +163,7 @@ a {
 }
 
 .three-col-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 33.33333%);
 }
 
 .add-action-card {
@@ -202,6 +207,14 @@ ul {
   text-align: center;
   font-size: 8px;
   font-weight: 700;
-  line-height: 8px;
+  line-height: 16px;
   color: white;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+.full-width {
+  width: 100%;
 }

@@ -13,11 +13,6 @@ interface Iprops {
   children?: React.ReactNode;
 }
 
-/* 
-!TO-DO:
-1. Teammate count size issue
-*/
-
 const Card: React.FC<Iprops> = ({
   title,
   subtitle,
@@ -27,11 +22,10 @@ const Card: React.FC<Iprops> = ({
   children,
 }) => (
   <div>
-    <div className="horizontal-flex justify-space-between align-flex-start">
-      <div className="horizontal-flex">
+    <div className="horizontal-flex align-flex-start card-content">
+      <div className="horizontal-flex flex-auto">
         {logo && <div className="logo">{logo}</div>}
-        <div>
-          {/* !TO-DO: Flex grow or width not working for elipsis*/}
+        <div className="full-width">
           <h5 className="title_1 card-title">{title}</h5>
           <div className="title_4 grey-font">{subtitle}</div>
         </div>

@@ -6,9 +6,8 @@ import CardLayout, { CardBGType } from "../../layouts/card-layout/CardLayout";
 import Card from "../card/Card";
 
 import { ReactComponent as TeamOne } from "src/assets/images/Team1.svg";
-// !TO-DO: Team2 profile not updating
-import { ReactComponent as TeamTwo } from "src/assets/images/Team2.svg";
 import { ReactComponent as PlusIcon } from "src/assets/icons/plus-icon.svg";
+import TeamTwo from "src/assets/avatars/User11.png";
 
 import "src/biz-components/dashboard/Dashboard.scss";
 import { TEAMS_LOGO } from "src/utils/data";
@@ -38,7 +37,7 @@ const Teams: React.FC = () => {
           <Card
             title={t("team.team2")}
             subtitle={t("team.members", { count: 30 })}
-            logo={<TeamTwo width={40} height={40} />}
+            logo={<img width={40} height={40} src={TeamTwo} alt="User" />}
             teammateArray={TEAMS_LOGO}
           />
         </CardLayout>
